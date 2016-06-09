@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
+
   <head>
-    <meta charset="UTF-8">
-    <title>BayLibre ACME by baylibre-acme</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="BayLibre ACME : Another Cute Measurement Equipment">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>BayLibre ACME</title>
   </head>
+
   <body>
-    <section class="page-header">
-      <h1 class="project-name">BayLibre ACME</h1>
-      <h2 class="project-tagline">Another Cute Measurement Equipment</h2>
-      <a href="https://github.com/baylibre-acme/ACME" class="btn">View on GitHub</a>
-      <a href="https://github.com/baylibre-acme/ACME/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/baylibre-acme/ACME/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
 
-    <section class="main-content">
-      <p><img src="https://avatars3.githubusercontent.com/u/19706065?v=3&amp;s=300" alt="ACME"></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/baylibre-acme/ACME">View on GitHub</a>
 
-<p>This project is to provide a repoductible, maintainable and functionnal Beaglebone Black images for the BayLibre ACME Cape using IIO as backend for Measurement transmission over network.</p>
+          <h1 id="project_title">BayLibre ACME</h1>
+          <h2 id="project_tagline">Another Cute Measurement Equipment</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/baylibre-acme/ACME/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/baylibre-acme/ACME/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><img src="https://avatars3.githubusercontent.com/u/19706065?v=3&amp;s=300" alt="ACME"></p>
+
+<p>This project is to provide a reproductible, maintainable and functional Beaglebone Black images for the BayLibre ACME Cape using IIO as backend for Measurement transmission over network.</p>
 
 <p>This image is targeted to be used using the following utilities : </p>
 
 <ul>
 <li>PulseView or sigrok-cli using our specially crafted libsigrok with IIO support (<a href="https://github.com/baylibre-acme/libsigrok">https://github.com/baylibre-acme/libsigrok</a>)</li>
 <li>iio-capture to capture samples or min/max/avg on a sampling time (<a href="https://github.com/BayLibre/iio-capture">https://github.com/BayLibre/iio-capture</a>)</li>
-<li>Enventually any IIO enabled tools like "IIO Osciloscope", see <a href="https://wiki.analog.com/software/linux/docs/iio/iio#pointers">https://wiki.analog.com/software/linux/docs/iio/iio#pointers</a>
+<li>Eventually any IIO enabled tools like "IIO Oscilloscope", see <a href="https://wiki.analog.com/software/linux/docs/iio/iio#pointers">https://wiki.analog.com/software/linux/docs/iio/iio#pointers</a>
 </li>
 <li>acme-cli the new ACME control utility (<a href="https://github.com/baylibre-acme/acme-cli">https://github.com/baylibre-acme/acme-cli</a>)</li>
 </ul>
@@ -53,7 +65,7 @@
 <pre><code>$ dd if=acme-bsp/build/build/sdimage-bootpart-201606021141-mmcblk.direct of=/dev/mmcblk0
 </code></pre>
 
-<p>Insert the SD Card into the BeagleBone Black slot, connect an ethernet cable to a DHCP backed LAN network and power it.
+<p>Insert the SD Card into the BeagleBone Black slot, connect an Ethernet cable to a DHCP backed LAN network and power it.
 When the LEDs blinks as an heartbeat, the system is up and running.</p>
 
 <p>Using a system on the same local LAN network with Avahi or Bonjour installed, test the system connectivity by pinging the ACME board :</p>
@@ -64,9 +76,9 @@ When the LEDs blinks as an heartbeat, the system is up and running.</p>
 <h2>
 <a id="cli-usage-instructions" class="anchor" href="#cli-usage-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CLI Usage Instructions</h2>
 
-<p>The experimenal Network CLI is available at <a href="https://github.com/baylibre-acme/acme-cli">https://github.com/baylibre-acme/acme-cli</a></p>
+<p>The experimental Network CLI is available at <a href="https://github.com/baylibre-acme/acme-cli">https://github.com/baylibre-acme/acme-cli</a></p>
 
-<p>The pyacmed server is provided in the lastest ACME Yocto based images and works with this CLI software.</p>
+<p>The pyacmed server is provided in the latest ACME Yocto based images and works with this CLI software.</p>
 
 <h2>
 <a id="sigrok--pulseview-instructions" class="anchor" href="#sigrok--pulseview-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sigrok / PulseView Instructions</h2>
@@ -77,15 +89,18 @@ When the LEDs blinks as an heartbeat, the system is up and running.</p>
 <a id="bugs--support" class="anchor" href="#bugs--support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bugs &amp; Support</h2>
 
 <p>Please use the ACME project page to report any issues (<a href="https://github.com/baylibre-acme/ACME/issues">https://github.com/baylibre-acme/ACME/issues</a>)</p>
+      </section>
+    </div>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/baylibre-acme/ACME">BayLibre ACME</a> is maintained by <a href="https://github.com/baylibre-acme">baylibre-acme</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">BayLibre ACME maintained by <a href="https://github.com/baylibre-acme">baylibre-acme</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+    </div>
 
-    </section>
+    
 
-  
   </body>
 </html>
