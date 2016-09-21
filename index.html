@@ -48,7 +48,7 @@ The current <em>baylibre-acme</em> sigrok upstream driver will only work on this
 <p><strong>Warning</strong> : This release is still in beta phase, some extended testing must be achieved</p>
 
 <ul>
-<li>Initial Beta Release : <a href="https://github.com/baylibre-acme/ACME/releases/tag/b1">acme-beaglebone-black_b0</a>
+<li>Initial Beta Release : <a href="https://github.com/baylibre-acme/ACME/releases/tag/b1">acme-beaglebone-black_b1</a>
 </li>
 </ul>
 
@@ -62,12 +62,12 @@ The current <em>baylibre-acme</em> sigrok upstream driver will only work on this
 <h2>
 <a id="install-instruction" class="anchor" href="#install-instruction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Instruction</h2>
 
-<p>Simply copy the image file onto the SD Card, under Linux run :</p>
+<p>Simply copy the image file onto the microSD Card, under Linux run :</p>
 
-<pre><code>$ xzcat acme-beaglebone-black_b1-sdcard-image.xz | pv | sudo dd of=/dev/mmcblk0 bs=1M
+<pre><code>$ xzcat acme-beaglebone-black_b1-sdcard-image.xz | sudo dd of=/dev/mmcblk0 bs=1M
 </code></pre>
 
-<p>Insert the SD Card into the BeagleBone Black slot, (optionally) connect an Ethernet cable to a DHCP backed LAN network and power it through USB.
+<p>Insert the microSD Card into the BeagleBone Black slot, (optionally) connect an Ethernet cable to a DHCP backed LAN network and power it through USB.
 When the LEDs blinks as an heartbeat, the system is up and running.</p>
 
 <p>Using a system on the same local LAN network with Avahi or Bonjour installed, test the system connectivity by pinging the ACME board :</p>
