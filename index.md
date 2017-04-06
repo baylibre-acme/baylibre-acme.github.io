@@ -30,7 +30,7 @@ See [https://github.com/baylibre-acme/ACME](https://github.com/baylibre-acme/ACM
 
 Simply copy the image file onto the microSD Card, under Linux run :
 ```
-$ xzcat acme-beaglebone-black_b1-sdcard-image.xz | sudo dd of=/dev/mmcblk0 bs=1M
+$ xzcat acme-beaglebone-black_b2-sdcard-image.xz | sudo dd of=/dev/mmcblk0 bs=1M
 ```
 
 Insert the microSD Card into the BeagleBone Black slot, (optionally) connect an Ethernet cable to a DHCP backed LAN network and power it through USB.
@@ -44,7 +44,9 @@ $ ping baylibre-acme.local
 ## Experimental Features ##
 An USB Gadget interface with Network and Console links has been added along other personalization features.
 
-Please refer at : [https://github.com/baylibre-acme/ACME#experimental-features](https://github.com/baylibre-acme/ACME#experimental-features)
+Please refer to : [https://github.com/baylibre-acme/ACME#experimental-features](https://github.com/baylibre-acme/ACME#experimental-features)
+
+A Yocto SDK Toolchain is provided since the b2 release, please refer to : [github.com/baylibre-acme/ACME/wiki/ACME-Yocto-SDK](https://github.com/baylibre-acme/ACME/wiki/ACME-Yocto-SDK)
 
 ## CLI Usage Instructions ##
 
