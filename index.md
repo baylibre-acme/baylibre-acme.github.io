@@ -40,6 +40,11 @@ Using a system on the same local LAN network with Avahi or Bonjour installed, te
 ```
 $ ping baylibre-acme.local
 ```
+## pyacmegraph Instructions
+
+A new graphical tool has been backed by the BayLibre team to visualize and save power metering.
+
+Please refer to : https://github.com/baylibre-acme/pyacmegraph
 
 ## Experimental Features ##
 An USB Gadget interface with Network and Console links has been added along other personalization features.
