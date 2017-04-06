@@ -18,7 +18,7 @@ The current *baylibre-acme* sigrok upstream driver will only work on this previo
 
 ## Releases ##
 **Warning** : This release is still in beta phase, some extended testing must be achieved
- * Initial Beta Release : [acme-beaglebone-black_b1](https://github.com/baylibre-acme/ACME/releases/tag/b1)
+ * Initial Beta Release : [acme-beaglebone-black_b2](https://github.com/baylibre-acme/ACME/releases/tag/b2)
 
 ## Build Instruction ##
 
