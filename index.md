@@ -7,6 +7,7 @@ GitHub Project page : [https://github.com/baylibre-acme](https://github.com/bayl
 This project is to provide a reproductible, maintainable and functional Beaglebone Black images for the BayLibre ACME Cape using IIO as backend for Measurement transmission over network.
 
 This image is targeted to be used using the following utilities : 
+- pyacmegraph [github.com/baylibre-acme/pyacmegraph](https://github.com/baylibre-acme/pyacmegraph)
 - PulseView or sigrok-cli using our specially crafted libsigrok with IIO support ([libsigrok](https://github.com/baylibre-acme/libsigrok))
 - iio-capture to capture samples or min/max/avg on a sampling time ([iio-capture](https://github.com/BayLibre/iio-capture))
 - Eventually any IIO enabled tools like "IIO Oscilloscope", see [wiki.analog.com/software/linux/docs/iio/iio](https://wiki.analog.com/software/linux/docs/iio/iio#pointers)
