@@ -12,8 +12,7 @@ This image is targeted to be used using the following utilities :
 - Eventually any IIO enabled tools like "IIO Oscilloscope", see [wiki.analog.com/software/linux/docs/iio/iio](https://wiki.analog.com/software/linux/docs/iio/iio#pointers)
 - acme-cli the new ACME control utility ([acme-cli](https://github.com/baylibre-acme/acme-cli))
 
-**Warning:** This image is not compatible with the initial sigrok based release you can find at :
- * [acme wiki](http://wiki.baylibre.com/doku.php?id=acme:start)
+**Warning:** This image is not compatible with the initial sigrok based release you can find at : [wiki.baylibre.com/doku.php?id=acme:start](http://wiki.baylibre.com/doku.php?id=acme:start)
 
 The current *baylibre-acme* sigrok upstream driver will only work on this previous image release.
 
