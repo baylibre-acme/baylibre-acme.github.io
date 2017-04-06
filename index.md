@@ -14,6 +14,7 @@ This image is targeted to be used using the following utilities :
 
 **Warning:** This image is not compatible with the initial sigrok based release you can find at :
  * [acme wiki](http://wiki.baylibre.com/doku.php?id=acme:start)
+
 The current *baylibre-acme* sigrok upstream driver will only work on this previous image release.
 
 ## Releases ##
