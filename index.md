@@ -1,6 +1,6 @@
-**The BayLibre ACME page has been moved to GitLab : https://gitlab.com/baylibre-acme**
+**The BayLibre ACME project has been moved to GitLab : [https://gitlab.com/baylibre-acme](https://gitlab.com/baylibre-acme)**
 
-Please follow to : https://baylibre-acme.gitlab.io/
+Please follow to : [https://baylibre-acme.gitlab.io](https://baylibre-acme.gitlab.io) to get more informations on the project !
 
 ![ACME](https://avatars3.githubusercontent.com/u/19706065?v=3&s=300)
 
